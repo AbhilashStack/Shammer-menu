@@ -1,6 +1,5 @@
 // app.js - Main JavaScript for Mr.Chai Tea Point by Shammer
 // ----------------------------------------------------------
-// This file handles menu rendering, cart logic, modal image preview, and all interactivity.
 
 // Menu data: add/edit items here
 const menu = [

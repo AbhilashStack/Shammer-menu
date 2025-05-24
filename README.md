@@ -1,7 +1,6 @@
 // README.md - Documentation for Mr.Chai Tea Point by Shammer Website
 // ---------------------------------------------------------------
-// This file explains the features, structure, customization, and support for the digital menu and cart system.
-// Each section is commented for clarity and future maintainers.
+
 
 # Mr.Chai Tea Point by Shammer - Website Documentation
 
