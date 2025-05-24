@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Point by Shammer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Header Flex Container: Contains title and (optionally) logo -->
+        <div class="header-flex">
+            <!-- Logo can be added here if needed -->
+            <div class="header-title-group">
+                <!-- Main Title -->
+                <h1>Mr.Chai Tea Point by Shammer</h1>
+                <!-- Subtitle -->
+                <p>Tea, Milkshakes & Snacks</p>
+            </div>
+        </div>
+        <!-- Cart Icon (top right) -->
+        <div id="cart-icon-container">
+            <span id="cart-icon" title="View Cart">
+                <!-- Shopping cart emoji icon -->
+                <span style="font-size: 2rem; line-height: 1;">🛒</span>
+                <span id="cart-count">0</span>
+            </span>
+        </div>
+    </header>
+    <main>
+        <section id="menu">
+            <!-- Menu Section Title -->
+            <h2>Menu</h2>
+            <!-- Collapsible Menu Categories -->
+            <div class="menu-category">
+                <!-- Tea Category -->
+                <h3 class="collapsible" data-target="tea-list">Tea</h3>
+                <div class="menu-list" id="tea-list" style="display:none;"></div>
+            </div>
+            <div class="menu-category">
+                <!-- Milkshakes Category -->
+                <h3 class="collapsible" data-target="milkshake-list">Milkshakes</h3>
+                <div class="menu-list" id="milkshake-list" style="display:none;"></div>
+            </div>
+            <div class="menu-category">
+                <!-- Snacks Category -->
+                <h3 class="collapsible" data-target="snack-list">Snacks</h3>
+                <div class="menu-list" id="snack-list" style="display:none;"></div>
+            </div>
+        </section>
+        <section id="cart" style="display:none;">
+            <!-- Cart Section -->
+            <h2>Your Cart</h2>
+            <div class="cart-instruction-highlight">
+                <strong>Ready to order?</strong><br>
+                Please <span style="color:#b71c1c;font-weight:bold;">call the waiter</span> or <span style="color:#b71c1c;font-weight:bold;">show this cart to the waiter</span> to place your order.
+            </div>
+            <ul id="cart-items"><!-- Cart items will be dynamically rendered here by app.js --></ul>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="back-to-menu">Back to Menu</button>
+        </section>
+    </main>
+    <footer>
+        <!-- Cart Instruction -->
+        <p>Show this cart to the waiter to place your order!</p>
+        <!-- Contact & Feedback Section -->
+        <div class="footer-contact">
+            <h4>Contact & Feedback</h4>
+            <p><strong>Name:</strong> Mr.Chai Tea Point by Shammer</p>
+            <p><strong>Phone:</strong> <a href="tel:+919999999999">+91 99999 99999</a></p>
+            <p><strong>Email:</strong> <a href="mailto:feedback@shamteapoint.in">feedback@shamteapoint.in</a></p>
+            <p><strong>Feedback:</strong> We value your feedback! Please contact us via phone or email.</p>
+            <!-- QR Code Safety Note -->
+            <p class="qr-note"><strong>Note:</strong> Please scan only the official QR code for menu and pay only at the counter.<br> If you see any other QR code, immediately inform the owner.<br> This is for your safety and as per Indian law (RBI/UPI compliance).</p>
+        </div>
+    </footer>
+    <!-- Modal for Menu Item Images -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
